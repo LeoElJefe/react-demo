@@ -1,0 +1,227 @@
+/* Existing styles... */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #c96666;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+/* Header styles */
+header {
+    background: #440e0e;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    font-size: 25px;
+    font-family: 'Chiller', cursive;
+}
+
+header a, header .highlight, header .current a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Chiller', cursive;
+}
+
+header li, header #branding {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-family: 'Chiller', cursive;
+}
+
+header #branding h1, #showcase h1 {
+    margin: 0;
+    font-family: 'Chiller', cursive;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Main content styles */
+#showcase {
+    min-height: 400px;
+    background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    margin: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content {
+    flex: 40;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 30;
+    background: darkred;
+    padding: 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    
+    transition: box-shadow 1s ease-in-out;
+    font-size: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Chiller', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    border: 2px solid black; /* Add a black border */
+    border-radius: 50px;
+    position: relative;
+    z-index: 1; 
+}
+
+.sidebar:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+     /* Add border-radius for more curves */
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+    
+    
+}
+.content {
+    flex: 40;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2, .card p {
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+
+.sidebar-item:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.7s ease-in-out;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 100px; /* Add border-radius for a smoother look */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    margin: 0.3px; /* Add negative margin to compensate for padding */
+    z-index: -2; /* Set a higher z-index value */
+    
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #d45b3a;
+    text-align: center;
+}
+
+.dashboard {
+    background-color: rgb(159, 31, 11);
+}
+
+.image-container img {
+    border: 5px double #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #000000;
+    color: #e52e71;
+    text-shadow: 0px 0px 5px rgba(195, 35, 35, 10);
+    background-color: #000000; /* Blue */
+    color: rgb(123, 10, 10);
+    font-family: 'Creepster', cursive;
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+ 
+
+.dashboard ul li a:hover {
+    border: 1px solid rgb(142, 66, 66);
+    position: relative;
+}
+
+.dashboard ul li a:hover::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(142, 66, 66);
+}
+
