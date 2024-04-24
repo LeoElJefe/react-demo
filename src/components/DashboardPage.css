@@ -1,5 +1,10 @@
 /* Existing styles... */
+.h1dash{
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
 
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -47,6 +52,14 @@ header #branding h1, #showcase h1 {
     margin: 0;
     font-family: 'Chiller', cursive;
 }
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Chiller', cursive;
+}
 
 header nav {
     float: right;
@@ -87,21 +100,57 @@ header nav {
     flex: 40;
 }
 
-/* Card styles */
-.card {
-    background-color: #fff;
-    border-radius: 10px;
+
+
+.card + .dropdown {
+    display: block;
+    position: relative;
+}
+.dropdown {
+    display: none;
+    background-color: #f9f9f9;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 75px; 
+    margin-right: 75px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+    border: 4px solid black;
 }
 
-.card:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+.dropdown:hover {
+    transform: translateY(0);
 }
 
-/* Sidebar styles */
+.card:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 75px; 
+    margin-right: 75px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+    border: 4px solid black;
+}
+
+
 .sidebar {
     flex: 30;
     background: darkred;
@@ -139,11 +188,32 @@ header nav {
 
 /* Card styles */
 .card {
-    background-color: #fff;
+    background-color: #b95151;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-left: 75px; /* Add a margin to the left */
+    margin-right: 75px; /* Add a margin to the right */
+    position: relative;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card h2, .card p {
@@ -160,7 +230,7 @@ header nav {
 
 
 .sidebar-item:hover {
-    background-color: #f0f0f0;
+    background-color: #ce3838;
     transition: background-color 0.7s ease-in-out;
     padding: 0px;
     cursor: pointer;

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.sidebar1 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  overflow-y: auto; /* Enable scrolling if the content is taller than the viewport */
+}
+
+
+.sidebar1 h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar1 input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sidebar1 .featured-discount {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.sidebar1 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar1 li {
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.sidebar1 h2, .sidebar1 h3 {
+  font-size: 20px;
+  color: #666;
+}
+
+.sidebar1 p {
+  font-size: 16px;
+  color: #999;
+}
+
+.sidebar1 a {
+  color: #333;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}

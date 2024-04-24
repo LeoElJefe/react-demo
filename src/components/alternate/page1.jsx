@@ -1,5 +1,5 @@
 import React from 'react';
-import './Page1.css'; // Create and import a CSS file for Page1
+
 import { useNavigate } from 'react-router-dom';
 
 const Page1 = () => {
@@ -28,7 +28,7 @@ const Page1 = () => {
             <header>
                 <div className="container">
                     <div id="branding">
-                        <h1>The Haunt</h1>
+                        <h1>About The Haunt</h1>
                     </div>
                     <nav>
                         <ul>
